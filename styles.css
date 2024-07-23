@@ -1,0 +1,359 @@
+:root {
+  --text-color: #1a1c20;
+  --link-color: #4a76ee;
+  --background-color: #eeeff1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.skills-section h2,
+.projects-section h2,
+.contact-section h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 80px;
+}
+
+nav .left a {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav .right a {
+  color: var(--text-color);
+  margin: 0 10px;
+}
+
+nav .right a:last-child {
+  color: var(--text-color);
+  margin: 0 10px;
+  color: var(--background-color);
+  background-color: var(--text-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+nav .right a span {
+  margin-left: 5px;
+}
+
+/* SECTION 1: Hero*/
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin-bottom: 100px;
+  margin: 50px 0;
+  gap: 40px;
+}
+
+.hero-section .text {
+  flex: 5;
+}
+
+.hero-section .headshot {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.hero-section h2 {
+  font-size: 45px;
+}
+
+.hero-section h3 {
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.hero-section .text .links {
+  margin-top: 25px;
+}
+
+.hero-section .text .links a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid var(--link-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: 0.1s;
+}
+
+.hero-section .headshot img {
+  width: 350px;
+  border-radius: 50%;
+}
+
+.hero-section .text .links a:hover {
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+}
+
+/* SECTION 2: Skills */
+.skills-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.skills-section .text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-section .cells {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 250px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1.5px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.skills-section .cells .cell img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.skills-section .cells .cell span {
+  font-size: 18px;
+}
+
+/* SECTION 3: Projects */
+.projects-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.projects-section .project-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.projects-section .project-container .project-card {
+  display: flex;
+  width: min-content;
+  padding: 40px;
+  border-radius: 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border: 0.5px solid #d3d3d3;
+}
+
+.projects-section .project-card .project1-ss-container,
+.projects-section .project-card .project2-ss-container {
+  display: flex;
+  width: 350px;
+  padding-top: 40px;
+  justify-content: center;
+  border-radius: 40px;
+}
+
+.projects-section .project-card .project1-ss-container {
+  background-color: #f2ac29;
+}
+
+.projects-section .project-card .project2-ss-container {
+  background-color: #f13bf1;
+}
+
+.projects-section .project-card img {
+  width: 180px;
+  height: 280px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.projects-section .project-card .project-links {
+  display: flex;
+  gap: 15px;
+}
+
+.projects-section .project-card .project-links a {
+  padding: 8px 15px;
+  border-radius: 15px;
+  border: 0.5px solid #d3d3d3;
+  color: var(--text-color);
+  transition: 0.1s;
+}
+
+.projects-section .project-card .project-links a:hover {
+  background-color: var(--text-color);
+  color: white;
+}
+
+/* SECTION 4: Contact */
+.contact-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.contact-section .contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section .contact-container .contact-content {
+  border: 0.5px solid #d3d3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: fit-content;
+  padding: 20px 30px;
+  border-radius: 30px;
+  gap: 20px;
+}
+
+.contact-section .contact-container .contact-content a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-section .contact-container .contact-content a i {
+  font-size: 25px;
+}
+
+/* Footer section*/
+footer p {
+  font-size: 15px;
+  color: #8e8787;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0 50px;
+}
+
+@media (max-width: 850px) {
+  /* SECTION 1: Hero */
+  .hero-section .text h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 740px) {
+  /* SECTION 1: Hero */
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section .headshot img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* NAVBAR */
+  nav {
+    padding: 0 20px;
+  }
+
+  nav .right a {
+    font-size: 22px;
+  }
+
+  nav .right a:last-child {
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 0;
+  }
+
+  nav .right a span {
+    display: none;
+  }
+
+  /* SECTION 1: Hero */
+  .hero-section {
+    padding: 0 20px;
+  }
+
+  .hero-section .text h2 {
+    font-size: 30px;
+  }
+
+  .hero-section .text h3 {
+    font-size: 20px;
+  }
+
+  /* SECTION 2: Skills */
+  .skills-section {
+    padding: 0 20px;
+  }
+
+  .skills-section .cells .cell span {
+    font-size: 16px;
+  }
+
+  /* SECTION 3: Projects */
+  .projects-section {
+    padding: 0 20px;
+  }
+
+  .projects-section .project-card .project1-ss-container,
+  .projects-section .project-card .project2-ss-container {
+    width: 250px;
+    justify-content: center;
+    border-radius: 40px;
+  }
+
+  /* SECTION 4: Contact */
+  .contact-section {
+    padding: 0 20px;
+  }
+
+  .contact-section .contact-container .contact-content a span {
+    font-size: 15px;
+  }
+
+  /* Footer section */
+  footer p {
+    font-size: 12px;
+    padding: 0 20px;
+  }
+}
