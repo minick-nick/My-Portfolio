@@ -288,14 +288,26 @@ footer p {
   }
 }
 
+
 @media (max-width: 600px) {
+  .skills-section h2,
+  .projects-section h2,
+  .contact-section h2 {
+    font-size: 25px;
+  }
+
   /* NAVBAR */
   nav {
     padding: 0 20px;
   }
 
+  nav .left a {
+    font-size: 20px;
+  }
+
   nav .right a {
-    font-size: 22px;
+    font-size: 20px;
+    margin: 0 5px;
   }
 
   nav .right a:last-child {
